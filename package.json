@@ -55,7 +55,9 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3081120230719001",
     "@tuniao/tn-icon": "^1.9.0",
     "@tuniao/tn-style": "^1.0.19",
-    "@tuniao/tnui-vue3-uniapp": "^1.0.20",
+    "@tuniao/tnui-vue3-uniapp": "^1.0.0",
+    "element-plus": "^2.3.0",
+    "pinia": "^2.2.0",
     "tnuiv3p-tn-color-select": "^1.0.2",
     "tnuiv3p-tn-comment-list": "^1.0.8",
     "tnuiv3p-tn-cool-icon": "^1.0.0",
@@ -71,8 +73,9 @@
     "tnuiv3p-tn-time-line": "1.0.3",
     "tnuiv3p-tn-update-user-info-popup": "^1.0.1",
     "tnuiv3p-tn-verify-code-input": "1.0.3",
-    "vue": "^3.2.47",
-    "vue-i18n": "^9.1.9"
+    "vue": "^3.4.35",
+    "vue-i18n": "^9.1.9",
+    "vue-router": "^4.4.2"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.3.2",

@@ -7,6 +7,20 @@
 				"defaultTitle": ""
 			}
 		}
+	},
+	{
+		"path" : "views/Login/index",
+		"style" : 
+		{
+			"navigationBarTitleText" : ""
+		}
+	},
+	{
+		"path" : "views/Login/Register",
+		"style" : 
+		{
+			"navigationBarTitleText" : ""
+		}
 	}],
 	"subPackages": [{
 			"root": "demo-pages",
