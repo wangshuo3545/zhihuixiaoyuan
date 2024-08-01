@@ -1,0 +1,15 @@
+
+/* 页面内容 start */
+.tn-page {
+  position: relative;
+  // width: 100%;
+  padding: 0rpx 30rpx;
+  margin-top: 10rpx;
+
+  .news-item {
+    & + .news-item {
+      margin-top: 30rpx;
+    }
+  }
+}
+/* 页面内容 end */

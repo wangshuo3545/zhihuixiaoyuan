@@ -1,0 +1,186 @@
+/* 导航栏 start */
+.navbar {
+	position: relative;
+	width: 80vw;
+	padding: 0rpx 30rpx;
+	display: flex;
+
+	.search-operation {
+		flex-grow: 0;
+		flex-shrink: 0;
+		font-size: 35rpx;
+	}
+
+	.category {
+		flex: 1;
+		margin-left: 10rpx;
+		padding-top: 2rpx;
+		font-size: 30rpx;
+		font-weight: 600;
+	}
+
+}
+
+/* 导航栏 end */
+
+
+/* 页面 start */
+.page {
+	padding-top: calc(160rpx + constant(safe-area-inset-top));
+	padding-top: calc(160rpx + env(safe-area-inset-top));
+	min-height: 100vh;
+	background:
+		linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
+		/* 从上到下的渐变 */
+		linear-gradient(to right, #FCE3E2, #F2E5E9, #DAE2EF, #DBE3F0);
+	/* 从左到右的渐变 */
+	background-blend-mode: screen;
+}
+
+/* 页面 end */
+
+.swiper-container {
+	position: relative;
+	// width: 100%;
+	// height: 100%;
+
+	.swiper-item {
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		&+.swiper-item {
+			margin-top: 30rpx;
+		}
+
+		.swiper-wrapper {
+			position: relative;
+			width: 100%;
+			height: 300rpx;
+			border-radius: 30rpx;
+			overflow: hidden;
+
+			.swiper-data {
+				width: 100%;
+				height: 100%;
+				border-radius: 30rpx;
+				background-color: var(--tn-color-gray-light);
+
+				&.animation {
+					transition: transform 0.5s linear;
+					transform: scale(0.8);
+				}
+
+				&.active {
+					transform: scale(1);
+				}
+
+				.image {
+					width: 100%;
+					height: 100%;
+					border-radius: inherit;
+				}
+			}
+		}
+	}
+}
+
+/* 分类 start */
+.category1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30rpx;
+
+	z-index: -1;
+
+	.category-item {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.icon {
+			position: relative;
+			font-size: 50rpx;
+			padding: 20rpx 22rpx;
+			width: 100rpx;
+			height: 100rpx;
+			background-color: #FFFFFF;
+			border-radius: 50%;
+			box-shadow: 0px 10px 30px rgba(70, 23, 129, 0.12),
+				0px -8px 40px rgba(255, 255, 255, 1),
+				inset 0px -10px 10px rgba(70, 23, 129, 0.05),
+				inset 0px 10px 20px rgba(255, 255, 255, 1);
+
+			/* &::before {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 20rpx;
+				height: 20rpx;
+				border-radius: 50%;
+				transform: translate(-50%, -50%);
+
+			} */
+		}
+
+		.title {
+			margin-top: 14rpx;
+		}
+	}
+}
+
+/* 分类 end */
+.title-container {
+  position: relative;
+  // width: 100%;
+
+  .title-item {
+    position: relative;
+    width: 100%;
+	font-weight: 600;
+    & + .title-item {
+      margin-top: 30rpx;
+    }
+  }
+}
+
+.scroll-view {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.product-item {
+  display: inline-block;
+  width: 600rpx;
+  margin-right: 50rpx;
+  overflow: hidden;
+}
+
+.tn-body{
+	/* background: linear-gradient(to right, #aaaaff, #E0EBFF); */
+	padding: 20rpx;
+	/* margin: 30rpx 0; */
+	border-radius: 10rpx;
+}
+.tabs-container {
+  position: relative;
+  // width: 100%;
+
+  .tabs-item {
+    position: relative;
+    // width: 100%;
+
+    & + .tabs-item {
+      margin-top: 30rpx;
+    }
+  }
+}
+.tn-tabbar-height {
+		min-height: 140rpx;
+		height: calc(140rpx + env(safe-area-inset-bottom) / 2);
+		height: calc(140rpx + constant(safe-area-inset-bottom));
+	}

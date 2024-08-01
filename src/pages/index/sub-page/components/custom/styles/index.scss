@@ -1,0 +1,128 @@
+/* 导航栏 start */
+.navbar {
+  position: relative;
+  width: 80vw;
+  padding: 0rpx 30rpx;
+  display: flex;
+
+  .search-operation {
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 40rpx;
+  }
+
+  .category {
+    flex: 1;
+    margin-left: 20rpx;
+    padding-top: 4rpx;
+  }
+}
+/* 导航栏 end */
+
+
+/* 页面 start */
+.page {
+  	padding-top: calc(160rpx + constant(safe-area-inset-top));
+  	padding-top: calc(160rpx + env(safe-area-inset-top));
+  	min-height: 100vh;
+  	background:
+  		linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
+  		/* 从上到下的渐变 */
+  		linear-gradient(to right, #FCE3E2, #F2E5E9, #DAE2EF, #DBE3F0);
+  	/* 从左到右的渐变 */
+  	background-blend-mode: screen;
+}
+/* 页面 end */
+.tn-graphic-card{
+	background-color: #ffffff60 !important;
+}
+.graphic-card-container {
+	position: relative;
+	width: 100%;
+	background-color: #ffffff60;
+			border-radius: 20rpx;
+	.graphic-card-item {
+		position: relative;
+		width: 100%;
+		&+.graphic-card-item {
+			margin-top: 20rpx;
+		}
+
+		.custom-brief-operation {
+			background: linear-gradient(to bottom, #e1ecfd, #f9fdff);
+			color: var(--tn-color-red);
+			line-height: 1;
+			padding: 12rpx 20rpx;
+			border-radius: 100rpx;
+			
+		}
+	}
+}
+.title-container {
+  position: relative;
+  width: 100%;
+
+  .title-item {
+    position: relative;
+    width: 100%;
+	font-weight: 600;
+    & + .title-item {
+      margin-top: 30rpx;
+    }
+  }
+}
+.image-circle{
+    // padding: 95rpx;
+    width: 190rpx;
+    height: 190rpx;
+    font-size: 40rpx;
+    font-weight: 300;
+    position: relative;
+  }
+  .image-pic{
+    border: 1rpx solid #F8F7F8;
+    background-size: cover;
+    background-repeat:no-repeat;
+    // background-attachment:fixed;
+    background-position:top;
+    border-radius: 20rpx;
+  }
+ 
+.list-container {
+  position: relative;
+  width: 100%;
+  // background-color: #aaaaff;
+  background: linear-gradient(to right, #f9fdff, #e1ecfd);
+  border-radius: 30rpx;
+  margin-bottom: 20rpx;
+  .list-item {
+    position: relative;
+    width: 100%;
+
+    & + .list-item {
+      margin-top: 30rpx;
+    }
+
+    .list-content {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+
+      .icon {
+        width: 50rpx;
+        height: 50rpx;
+        border-radius: 50%;
+        font-size: 38rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .text {
+        margin-left: 20rpx;
+		
+      }
+    }
+  }
+}
